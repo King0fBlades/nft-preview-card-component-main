@@ -1,0 +1,154 @@
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+html {
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+	font-family: 'Outfit', sans-serif;
+}
+
+body {
+	margin: 0px;
+	min-height: 100%;
+	width: 100%;
+	background-color: hsl(217, 54%, 11%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+}
+
+.card {
+	background-color: hsl(216, 50%, 16%);
+	max-width: 320px;
+	width: 80%;
+	border-radius: 20px;
+	padding: 20px;
+	box-shadow: 0 25px 5px 10px hsl(217, 54%, 10%),
+		0 20px 5px 35px hsl(217, 57%, 11%);
+}
+
+.card-img {
+	border-radius: 10px;
+	width: 100%;
+	position: relative;
+}
+
+.card-img .eq {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.card-img a {
+	width: 100%;
+	background-color: hsl(178, 100%, 50%);
+	z-index: 1;
+	position: absolute;
+	height: 98.5%;
+	left: 0;
+	opacity: 0;
+	border-radius: 10px;
+}
+
+.eye {
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	top: 41%;
+	left: 43%;
+}
+
+.card-img a:hover {
+	opacity: 0.5;
+	border-radius: 10px;
+}
+
+.card-content p {
+	color: hsl(215, 51%, 70%);
+	margin: 0;
+	font-weight: 300;
+}
+
+h1,
+h1 a {
+	font-size: 24px;
+	color: hsl(0, 0%, 100%);
+	font-weight: 400;
+	text-decoration: none;
+}
+
+h1 a:hover {
+	color: hsl(178, 100%, 50%);
+}
+
+.card-footer {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 2px solid hsl(215, 32%, 27%);
+	font-size: 16px;
+}
+
+.price {
+	color: hsl(178, 100%, 50%);
+	font-weight: 600;
+}
+
+.price::before {
+	content: url(images/icon-ethereum.svg);
+	padding-right: 5px;
+	position: relative;
+	top: 3px;
+}
+
+.time-left {
+	color: hsl(215, 51%, 70%);
+	font-weight: 400;
+}
+
+.time-left::before {
+	content: url(images/icon-clock.svg);
+	padding-right: 5px;
+	position: relative;
+	top: 3px;
+}
+
+.card-creator {
+	margin: 15px 0 10px 0;
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.profile-picture {
+	border: 1px solid hsl(0, 0%, 100%);
+	border-radius: 50%;
+	height: 35px;
+	width: 35px;
+}
+
+.profile-picture img {
+	width: 100%;
+}
+
+.creator-name {
+	color: hsl(215, 51%, 70%);
+	margin-left: 20px;
+}
+
+#name {
+	color: hsl(0, 0%, 100%);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#name:hover {
+	color: hsl(178, 100%, 50%);
+}
